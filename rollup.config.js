@@ -10,14 +10,14 @@ export default {
   input: "src/index.ts",
   output: {
     file: "dist/bundle.js",
-    format: "cjs", // immediately-invoked function expression — suitable for <script> tags
+    format: "cjs",
     sourcemap: true,
   },
   plugins: [
     typescript(), // translate typescript
     json(), // import json files
-    resolve(), // tells Rollup how to find date-fns in node_modules
-    commonjs(), // converts date-fns to ES modules
+    resolve(), // tells Rollup how to find usages in node_modules
+    commonjs(), // converts to ES modules
     production && terser(), // minify, but only in production
   ],
 };
