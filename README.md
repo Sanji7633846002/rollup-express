@@ -1,6 +1,6 @@
 # Overview
 
-Example of usage rollup with typescript and expressjs
+Example of usage rollup with typescript and expressjs for backend
 
 # Install
 
@@ -16,7 +16,7 @@ watch and build bundle. run it
 npm run watch
 ```
 
-wawatchthc and rebuild node server. run it in different terminal
+watch and rebuild node server. run it in different terminal
 
 ```
 npm run start
